@@ -7,7 +7,10 @@ Pushes to `main` run `.github/workflows/deploy.yml`, which builds the API image 
 <!-- sdlc:auto:end how-it-deploys -->
 
 <!-- sdlc:auto:start environments -->
-_No environments recorded._
+| Name | Service | Runtime | Scaling | Environment |
+|---|---|---|---|---|
+| Static Assets Bucket | AWS S3 | Static file storage (HTML/JS/CSS build output) | Managed by AWS, effectively unlimited object serving | dev |
+| Content Delivery Network | AWS CloudFront | Edge cache / HTTPS distribution | Global edge auto-scaling, pay-per-use | dev |
 <!-- sdlc:auto:end environments -->
 
 <!-- sdlc:auto:start live -->
@@ -15,5 +18,10 @@ _Not deployed yet._
 <!-- sdlc:auto:end live -->
 
 <!-- sdlc:auto:start topology -->
-_No deployment topology recorded._
+```mermaid
+graph LR
+  n_Static_Assets_Bucket["Static Assets Bucket<br/>AWS S3"]
+  n_Content_Delivery_Network["Content Delivery Network<br/>AWS CloudFront"]
+  n_Content_Delivery_Network -->|"HTTPS"| n_Static_Assets_Bucket
+```
 <!-- sdlc:auto:end topology -->
