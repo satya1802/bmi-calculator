@@ -5,7 +5,7 @@
 <!-- sdlc:auto:start overview -->
 simple bmi
 
-**Documentation version:** v2
+**Documentation version:** v3
 <!-- sdlc:auto:end overview -->
 
 ## Contents
@@ -15,7 +15,7 @@ simple bmi
 |---|---|
 | [Requirements](requirements/README.md) | v1 approved |
 | [Architecture](architecture/README.md) | 9 entries |
-| [Development](development/README.md) | 1 entry |
+| [Development](development/README.md) | 12 entries |
 | [Testing](testing/README.md) | 1 entry |
 | [Deployment](deployment/README.md) | 1 entry |
 | [Maintenance](maintenance/README.md) | 1 entry |
@@ -31,7 +31,7 @@ simple bmi
 | [Runbook](deployment/runbook.md) | not deployed yet |
 | [Release notes](deployment/release-notes.md) | 0 releases |
 | [Traceability matrix](traceability-matrix.md) | 7 requirements |
-| [Changelog](CHANGELOG.md) | 2 versions |
+| [Changelog](CHANGELOG.md) | 3 versions |
 <!-- sdlc:auto:end contents -->
 
 ## Open gaps
@@ -44,7 +44,10 @@ simple bmi
 
 ### Development
 
-- Development phase has not started; no implementation or planning input provided -- it is unknown whether any of the approved user stories (US-001 to US-007) have been built.
+- No development execution evidence (ticket status, commits, build/test results) has been provided for Sprint 1 -- cannot confirm whether work is in progress, complete, or blocked.
+- No implementation status reported for this epic.
+- No ticket/commit/completion evidence provided to confirm this story has been built.
+- No ticket/commit/deployment evidence provided to confirm this story has been built or deployed.
 
 ### Testing
 
